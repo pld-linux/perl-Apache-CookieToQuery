@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Apache
 %define	pnam	CookieToQuery
-Summary:	Apache::CookieToQuery - Rewrite query string by adding cookie information
-#Summary(pl):	
+Summary:	Apache::CookieToQuery - rewrite query string by adding cookie information
+Summary(pl):	Apache::CookieToQuery - przepisywanie zapytañ przez dodawanie informacji o cookie
 Name:		perl-Apache-CookieToQuery
 Version:	1.04
 Release:	1
@@ -24,11 +24,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module will aid in adding cookie information to your query strings
-so that cgi scripts or handlers underneath can have immidate benefit
+This module will aid in adding cookie information to your query
+strings so that CGI scripts or handlers underneath can have immediate
+benefit.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ pomaga w dodawaniu informacji o ciasteczkach do ³añcuchów
+zapytañ, co daje bezpo¶rednie korzy¶ci skryptom lub procedurom obs³ugi
+CGI.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -52,5 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/Apache/*.pm
 %{_mandir}/man3/*
