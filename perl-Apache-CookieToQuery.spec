@@ -1,10 +1,10 @@
 #
 # Conditional build:
-%bcond_without  tests           # do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Apache
-%define	pnam	CookieToQuery
+%define		pdir	Apache
+%define		pnam	CookieToQuery
 Summary:	Apache::CookieToQuery - rewrite query string by adding cookie information
 Summary(pl):	Apache::CookieToQuery - przepisywanie zapytañ przez dodawanie informacji o cookie
 Name:		perl-Apache-CookieToQuery
