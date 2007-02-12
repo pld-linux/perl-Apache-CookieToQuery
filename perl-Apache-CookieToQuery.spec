@@ -6,7 +6,7 @@
 %define		pdir	Apache
 %define		pnam	CookieToQuery
 Summary:	Apache::CookieToQuery - rewrite query string by adding cookie information
-Summary(pl):	Apache::CookieToQuery - przepisywanie zapytaÒ przez dodawanie informacji o cookie
+Summary(pl.UTF-8):   Apache::CookieToQuery - przepisywanie zapyta≈Ñ przez dodawanie informacji o cookie
 Name:		perl-Apache-CookieToQuery
 Version:	1.05
 Release:	1
@@ -30,9 +30,9 @@ This module will aid in adding cookie information to your query
 strings so that CGI scripts or handlers underneath can have immediate
 benefit.
 
-%description -l pl
-Ten modu≥ pomaga w dodawaniu informacji o ciasteczkach do ≥aÒcuchÛw
-zapytaÒ, co daje bezpo∂rednie korzy∂ci skryptom lub procedurom obs≥ugi
+%description -l pl.UTF-8
+Ten modu≈Ç pomaga w dodawaniu informacji o ciasteczkach do ≈Ça≈Ñcuch√≥w
+zapyta≈Ñ, co daje bezpo≈õrednie korzy≈õci skryptom lub procedurom obs≈Çugi
 CGI.
 
 %prep
