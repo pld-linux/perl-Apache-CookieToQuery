@@ -13,14 +13,14 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Apache/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ec044e95f2de4f1d612a191b640b90e8
 URL:		http://search.cpan.org/dist/Apache-CookieToQuery/
 BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	apache1-mod_perl-devel
 BuildRequires:	perl-libapreq
+BuildRequires:	perl-mod_perl1-devel
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
